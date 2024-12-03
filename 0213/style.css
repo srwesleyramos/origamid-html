@@ -1,0 +1,24 @@
+/*
+ * TODO:
+ * inline: respeita o fluxo da escrita; nao respeita valores de box model; valor padrão;
+ * inline-block: respeita o fluxo da escrita; aceita valores box model;
+ */
+
+h1 {
+    background: #ddd;
+    width: 300px;
+}
+
+span, a, strong {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+div, h1, p {
+    border: 1px solid rgb(255, 0, 0, 0.5);
+}
+
+#inline-block {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+}
