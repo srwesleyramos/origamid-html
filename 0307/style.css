@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    gap: 20px;
+
+    /* Quebrar os itens pra próxima linha */
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    background: #e7e7e7;
+    border: 2px solid #d7d7d7;
+    padding: 20px;
+    margin: 0;
+
+    /* Ocupar o espaço vázio */
+    flex-grow: 1;
+
+    /* Informa se o elemento pode encolher */
+    flex-shrink: 1;
+
+    /* Igualar o tamanho do conteúdo */
+    flex-basis: 0%;
+
+    /* Atalho */
+    flex: 1 1 0%;
+}
