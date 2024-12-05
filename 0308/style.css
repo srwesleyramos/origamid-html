@@ -1,0 +1,113 @@
+/*
+ * POSITION FIXED
+ */
+
+.fixed {
+    display: none;
+}
+
+.fixed h1 {
+    border: 2px solid #ccc;
+    padding: 20px 20px 200px 20px;
+}
+
+.fixed p {
+    background: #e7e7e7;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.fixed div {
+    /* Independente do scroll, o elemento permanece */
+    position: fixed;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+/*
+ * POSITION RELATIVE
+ */
+
+.relative {
+    display: none;
+}
+
+.relative div {
+    border: 2px solid #ccc;
+    margin-top: 40px;
+    padding: 20px 20px 40px 20px;
+}
+
+.relative span {
+    background: #e7e7e7;
+    border: 2px solid #ccc;
+    padding: 10px;
+
+    /* O elemento tem posição relativa; ocupa espaço */
+
+    position: relative;
+    top: -20px;
+}
+
+/*
+ * POSITION ABSOLUTE
+ */
+
+.absolute {
+    display: none;
+}
+
+.absolute div {
+    border: 2px solid #ccc;
+    margin-top: 40px;
+    padding: 20px 20px 40px 20px;
+
+    /* Caso o elemento mova relativamente a sua posição */
+    position: relative;
+}
+
+.absolute span {
+    background: #e7e7e7;
+    border: 2px solid #ccc;
+    padding: 10px;
+
+    /* O elemento tem posição relativa; não ocupa espaço */
+
+    position: absolute;
+    top: -20px;
+}
+
+/*
+ * Z-INDEX
+ */
+
+.zindex {
+    display: block;
+}
+
+.zindex h1 {
+    margin: 0;
+    padding: 10px;
+    background: lightblue;
+}
+
+.zindex .index1 {
+    position: relative;
+    background: greenyellow;
+    top: 30px;
+
+    /* Eixo de profundidade do elemento */
+    z-index: 1;
+}
+
+.zindex .index2 {
+    position: absolute;
+    background: lightcoral;
+    top: 60px;
+
+    /* Valor padrão */
+    z-index: 0;
+}
