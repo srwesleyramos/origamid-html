@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+/*
+ * UNIDADES DE TEXTO
+ */
+
+.texto {
+    display: none;
+}
+
+.px {
+    font-size: 16px;
+}
+
+.em {
+    /* Tamanho em relação ao elemento pai */
+
+    font-size: 1em;
+}
+
+.rem {
+    /* Tamanho em relação ao elemento raiz */
+
+    font-size: 1rem;
+}
+
+/*
+ * UNIDADES DE INTERFACE
+ */
+
+.interface {
+    display: none;
+}
+
+.interface div {
+    background: lightblue;
+
+    /* Altura refente a tela */
+    height: 100vh;
+
+    /* Largura referente a tela */
+    width: 100vw;
+}
+
+/*
+ * FUNÇÕES
+ */
+
+.funcoes {
+    display: block;
+}
+
+.funcoes div {
+    background: lightblue;
+
+    /* Altura refente a tela */
+    height: 100vh;
+
+    /* Largura referente a tela */
+    width: calc(100vw - 100px);
+}
