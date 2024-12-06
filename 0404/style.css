@@ -1,0 +1,15 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    background: #eee;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #000;
+}
